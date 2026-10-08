@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Courier New, sans-serif;
+    background: #D7C9B8;
+    color: black;
+}
+
+
+/* Header */
+
+header {
+    background: #7D0541;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Buttons */
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.links{
+color:#FFE87C;
+}
+
+/* Main */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+
+/* About */
+
+#about {
+    text-align: center;
+    font-size:20px;
+    color:#B93B8F;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+/* Skills */
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-grid div {
+    flex: 1 1 200px;
+    padding: 25px;
+    background: #7D0541;
+    text-align: center;
+    color:white;
+}
+
+
+/* Projects */
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#projects h2 {
+    width: 100%;
+}
+
+article {
+    flex: 1 1 200px;
+    padding: 25px;
+    background: #7D0541;
+    color:white;
+}
+
+
+/* Hobbies */
+
+#hobbies li {
+    margin: 10px;
+}
+
+
+/* Contact */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #222;
+    color: white;
+}
+
+
+/* Dark Theme */
+
+.dark-theme {
+    background: #1a1027;
+    color: white;
+}
+
+.dark-theme .skills-grid div,
+.dark-theme article {
+    background: #292929;
+}
+
+.dark-theme header,
+.dark-theme footer {
+    background: #000;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 40px 15px;
+    }
+}
